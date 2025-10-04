@@ -1,0 +1,34 @@
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      spacing="10"
+      prefWidth="640" prefHeight="480">
+
+    <StackPane fx:id="root" prefWidth="640" prefHeight="440">
+
+        <!-- fx:controller="com.example.MainMenu" -->
+        <!-- Background -->
+        <ImageView fx:id="solarSlides" fitWidth="100" fitHeight="100" preserveRatio="true"/>
+
+        <!-- Foreground -->
+        <ImageView fx:id="foreground" fitWidth="300" fitHeight="300" preserveRatio="true" />
+
+
+        <Text fx:id="caption"
+              text="Solar Flare Stage 1"
+              StackPane.alignment="BOTTOM_CENTER"
+              style="-fx-font-size: 20px; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1;" />
+    </StackPane>
+
+    <Slider fx:id="stageSlider"
+            min="0" max="100" value="0"
+            majorTickUnit="1" blockIncrement="1"
+            snapToTicks="true"
+            showTickLabels="false" showTickMarks="false"/>
+</VBox>

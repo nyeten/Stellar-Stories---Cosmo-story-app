@@ -17,11 +17,11 @@ public class MainMenu {
 
     @FXML
     private void switchToTut1() throws IOException {
-        // FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/app/tut1.fxml"));
-        // Tut1 controller = new Tut1(stage);
-        // loader.setController(controller);
-        // Scene scene = new Scene(loader.load());
-        // stage.setScene(scene);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/solarFlare.fxml"));
+        SolarFlare controller = new SolarFlare(stage);
+        loader.setController(controller);
+        Scene scene = new Scene(loader.load());
+        stage.setScene(scene);
     }
 
     @FXML

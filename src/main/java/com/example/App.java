@@ -12,11 +12,14 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
+    
 
     @Override
     public void start(Stage stage) throws IOException {
+        System.out.println(getClass().getResource("/images/solar.png"));
+
         //creates a fxml loader with a path to the file mainMenu.fxml
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/solar/mainMenu.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/mainMenu.fxml"));
         //makes instance of MainMenu java class, and sets the controller of fxml-
         // as java class, allowing you to initialize it with the stage variable
         MainMenu controller = new MainMenu(stage);
