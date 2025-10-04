@@ -1,0 +1,24 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      prefWidth="640" prefHeight="480"
+      spacing="40"
+      alignment="CENTER"
+      style="-fx-background-color: LIGHTCORAL;">
+
+    <!-- Top Row -->
+    <HBox spacing="40" alignment="CENTER">
+        <Button text="Tutorial 1" onAction="#switchToTut1" prefWidth="150"/>
+        <Button text="Tutorial 2" onAction="#switchToTut2" prefWidth="150"/>
+    </HBox>
+
+    <!-- Bottom Row -->
+    <HBox spacing="40" alignment="CENTER">
+        <Button text="Tutorial 3" onAction="#switchToTut3" prefWidth="150"/>
+        <Button text="Tutorial 4" onAction="#switchToTut4" prefWidth="150"/>
+    </HBox>
+
+</VBox>
