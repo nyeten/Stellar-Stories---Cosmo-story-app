@@ -1,0 +1,27 @@
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           prefWidth="640" prefHeight="480">
+
+    <!-- bottom image -->
+    <ImageView fitWidth="300" fitHeight="300" preserveRatio="true">
+        <image>
+            <Image url="@/images/slide1.png" />
+        </image>
+    </ImageView>
+
+    <!-- top image -->
+    <ImageView fitWidth="300" fitHeight="300" preserveRatio="true">
+        <image>
+            <Image url="@/images/shipScene.png" />
+        </image>
+    </ImageView>
+
+    <!-- Text overlaid at the png -->
+    <Text text="WELCOME TO SOLARE FLARE PRESENTATION (im tired bro)!"
+          StackPane.alignment="BOTTOM_CENTER"
+          style="-fx-font-size: 20px; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1;" />
