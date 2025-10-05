@@ -13,7 +13,7 @@
       xmlns:fx="http://javafx.com/fxml"
       spacing="1"
       prefWidth="640" prefHeight="480">
-<StackPane fx:id="root" prefWidth="640" prefHeight="440">
+<StackPane fx:id="root" prefWidth="640" prefHeight="480">
 
     <!-- Background slides -->
     <ImageView fx:id="slides" fitWidth="200" fitHeight="200" preserveRatio="true"/>
@@ -21,12 +21,13 @@
     <!-- Foreground image -->
     <ImageView fx:id="foreground" fitWidth="640" fitHeight="480" preserveRatio="true" />
 
+    <!-- BorderPane for Text and Buttons -->
     <BorderPane prefWidth="640" prefHeight="440">
-
+        <!-- top of border Pane contains exit button -->
         <top>
                 <Button fx:id="backToMenuButton" text="Back to Menu" onAction="#backToMenu" prefWidth="100"/>
         </top>
-
+        <!-- Bottom center of BorderPane contains texts and buttons for slide traversal -->
         <bottom>
             <VBox
               alignment="BOTTOM_CENTER"

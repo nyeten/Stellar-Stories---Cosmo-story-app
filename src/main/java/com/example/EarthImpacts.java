@@ -66,9 +66,8 @@ public class EarthImpacts {
         updateButtons(); // Disable the Previous button on the first slide
     }
     
-    @FXML 
+    @FXML     //go back to Main Menu
     private void backToMenu() throws IOException {
-        System.out.println("boooooooooooooombs");
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/mainMenu.fxml"));
         MainMenu mainMenu = new MainMenu(stage);
         loader.setController(mainMenu);
@@ -121,19 +120,29 @@ public class EarthImpacts {
         final StringBuilder displayedText = new StringBuilder();
         nextSlide.setDisable(true);
         prevSlide.setDisable(true);
+        // Create a Timeline to schedule animations (printing letters over time)
         Timeline timeline = new Timeline();
+
         for (int i = 0; i < fullText.length(); i++) {
-            final int index = i;
+            final int index = i; // capture the current index for use inside the lambda
+
+            // Create a KeyFrame that runs at (50ms * position) in the text
             KeyFrame keyFrame = new KeyFrame(
-                Duration.millis(50 * (i + 1)), // speed: 50ms per character
+                Duration.millis(50 * (i + 1)), // delay so each character prints one after another
                 event -> {
+                    // Append the next character to the displayed text
                     displayedText.append(fullText.charAt(index));
+
+                    // Update the textBox to show the progressively revealed string
                     textBox.setText(displayedText.toString());
                 }
             );
+
+            // Add this KeyFrame to the timeline
             timeline.getKeyFrames().add(keyFrame);
         }
-
+        
+        // Re-enable buttons after text animation completes
         timeline.setOnFinished(event -> {
             nextSlide.setDisable(goNext);
             prevSlide.setDisable(goPrev);
