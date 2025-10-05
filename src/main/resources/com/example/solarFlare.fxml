@@ -13,17 +13,25 @@
     <StackPane fx:id="root" prefWidth="640" prefHeight="440">
 
         <!-- fx:controller="com.example.MainMenu" -->
-        <!-- Background -->
-        <ImageView fx:id="solarSlides" fitWidth="100" fitHeight="100" preserveRatio="true"/>
+        <!-- Background /Slides -->
+        <ImageView fx:id="solarSlides" fitWidth="200" fitHeight="200" preserveRatio="true"/>
 
         <!-- Foreground -->
-        <ImageView fx:id="foreground" fitWidth="300" fitHeight="300" preserveRatio="true" />
+        <ImageView fx:id="foreground" fitWidth="640" fitHeight="480" preserveRatio="false" />
 
-
-        <Text fx:id="caption"
-              text="Solar Flare Stage 1"
+        <VBox fx:id="textBoxContainer"
+              alignment="BOTTOM_CENTER"
+              spacing="10"
               StackPane.alignment="BOTTOM_CENTER"
-              style="-fx-font-size: 20px; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1;" />
+              style="-fx-padding: 10px; -fx-border-color: black; -fx-border-width: 2px;">
+
+                    <Text fx:id="caption"
+                        text="Solar Flare Stage 1"
+                        style="-fx-font-size: 20px; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1;" />
+
+                    <Text fx:id="textBox"
+                        style="-fx-font-size: 10px; -fx-fill: black; -fx-stroke: black; -fx-stroke-width: 1;" />
+        </VBox>
     </StackPane>
 
     <Slider fx:id="stageSlider"

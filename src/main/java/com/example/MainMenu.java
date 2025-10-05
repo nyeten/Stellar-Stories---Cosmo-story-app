@@ -33,12 +33,12 @@ public class MainMenu {
         // stage.setScene(scene);
     }
     @FXML
-    private void switchToTut3() throws IOException {
-        // FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/app/tut3.fxml"));
-        // Tut3 controller = new Tut1(stage);
-        // loader.setController(controller);
-        // Scene scene = new Scene(loader.load());
-        // stage.setScene(scene);
+    private void switchToEarthImpacts() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/earthImpacts.fxml"));
+        EarthImpacts controller = new EarthImpacts(stage);
+        loader.setController(controller);
+        Scene scene = new Scene(loader.load());
+        stage.setScene(scene);
     }
 
     @FXML
