@@ -1,2 +1,2 @@
 # Stellar-Stories---Cosmo-story-app
-later
+Authors: Nye Ten
