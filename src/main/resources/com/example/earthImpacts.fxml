@@ -16,29 +16,26 @@
 <StackPane fx:id="root" prefWidth="640" prefHeight="480">
 
     <!-- Background slides -->
-    <ImageView fx:id="slides" fitWidth="200" fitHeight="200" preserveRatio="true"/>
+    <ImageView fx:id="slides" fitWidth="600" fitHeight="300" preserveRatio="true"/>
 
     <!-- Foreground image -->
-    <ImageView fx:id="foreground" fitWidth="640" fitHeight="480" preserveRatio="true" />
+    <ImageView fx:id="foreground" fitWidth="640" fitHeight="480" preserveRatio="true" translateY="+60" />
 
     <!-- BorderPane for Text and Buttons -->
     <BorderPane prefWidth="640" prefHeight="440">
         <!-- top of border Pane contains exit button -->
         <top>
-                <Button fx:id="backToMenuButton" text="Back to Menu" onAction="#backToMenu" prefWidth="100"/>
+                <Button fx:id="backToMenuButton" text="Exit" onAction="#backToMenu" prefWidth="100"/>
         </top>
         <!-- Bottom center of BorderPane contains texts and buttons for slide traversal -->
         <bottom>
             <VBox
               alignment="BOTTOM_CENTER"
               spacing="1"
-              StackPane.alignment="BOTTOM_CENTER" >
-                <Text fx:id="caption"
-                text="Space Weather's Impact on Earth"
-                style="-fx-font-size: 20px; -fx-fill: black; -fx-stroke: black; -fx-stroke-width: 1;" />
+              StackPane.alignment="BOTTOM_CENTER">
 
                 <Text fx:id="textBox"
-                style="-fx-font-size: 12px; -fx-fill: black;" />
+                style="-fx-font-size: 15px; -fx-fill: black;" />
 
                 <HBox spacing="10" alignment="BOTTOM_LEFT">
                     <Button fx:id="prevSlide" text="Previous" onAction="#prev" prefWidth="100"/>

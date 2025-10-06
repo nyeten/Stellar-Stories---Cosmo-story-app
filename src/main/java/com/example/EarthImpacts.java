@@ -38,16 +38,16 @@ public class EarthImpacts {
     boolean goNext = false;
 
     //String for each slide with description of current process
-    String slide1Text = "_____.";
-    String slide2Text = "ojoejfoiofejevfeoijeijeoiiejeoje foiojf.";
-    String slide3Text = "_____.";
-    String slide4Text = "_____.";
+    String slide1Text = "Space weather storms, caused by the Sun, can reach Earth.\nThey can disturb technology, travel, and even daily life on our planet.";
+    String slide2Text = "Solar flares and storms can interfere with satellites.\nThis disrupts GPS, radio signals, and communication systems we depend on.";
+    String slide3Text = "Radiation from solar storms is dangerous for \nastronauts in space and can also affect airplane flights at high altitudes.";
+    String slide4Text = "Space weather impacts technology, safety, and nature.\nIt reminds us how connected Earth is to the Sun’s powerful activity.";
 
     // Track the current slide index
     int currentSlide = 0;
 
     // Array of slide image URLs (placeholders for now)
-    String[] slideUrls = {"/images/donut.png", "/images/solar.png", "/images/nuc.png", "/images/smoke.png"};
+    String[] slideUrls = {"/images/solarOutput.png", "/images/satellite.png", "/images/astronaut.png", "/images/aurora.png"};
     String[] slideTexts = {slide1Text, slide2Text, slide3Text, slide4Text};
 
     // //its empty, I'll ad more eventually
@@ -59,8 +59,8 @@ public class EarthImpacts {
     public void initialize() {
 
         //set initial image and text
-        slides.setImage(new Image(getClass().getResource("/images/donut.png").toExternalForm()));
-        foreground.setImage(new Image(getClass().getResource("/images/donut.png").toExternalForm()));
+        slides.setImage(new Image(getClass().getResource("/images/solarOutput.png").toExternalForm()));
+        foreground.setImage(new Image(getClass().getResource("/images/Default_Shuttle.png").toExternalForm()));
         textPrinter(slide1Text);
 
         updateButtons(); // Disable the Previous button on the first slide

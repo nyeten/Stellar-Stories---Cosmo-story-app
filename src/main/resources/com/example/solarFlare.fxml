@@ -4,6 +4,7 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
@@ -12,31 +13,40 @@
 
     <StackPane fx:id="root" prefWidth="640" prefHeight="440">
 
-        <!-- fx:controller="com.example.MainMenu" -->
         <!-- Background /Slides -->
-        <ImageView fx:id="solarSlides" fitWidth="200" fitHeight="200" preserveRatio="true"/>
+        <ImageView fx:id="solarSlides" fitWidth="600" fitHeight="360" preserveRatio="false" translateY="-60"/>
 
         <!-- Foreground -->
         <ImageView fx:id="foreground" fitWidth="640" fitHeight="480" preserveRatio="false" />
 
-        <VBox fx:id="textBoxContainer"
-              alignment="BOTTOM_CENTER"
-              spacing="10"
-              StackPane.alignment="BOTTOM_CENTER"
-              style="-fx-padding: 10px; -fx-border-color: black; -fx-border-width: 2px;">
-
-                    <Text fx:id="caption"
-                        text="Solar Flare Stage 1"
-                        style="-fx-font-size: 20px; -fx-fill: white; -fx-stroke: black; -fx-stroke-width: 1;" />
-
-                    <Text fx:id="textBox"
-                        style="-fx-font-size: 10px; -fx-fill: black; -fx-stroke: black; -fx-stroke-width: 1;" />
+        <!-- Exit button pinned to top-left -->
+        <VBox alignment="TOP_LEFT" StackPane.alignment="TOP_LEFT">
+            <Button fx:id="exit" text="Exit" onAction="#exitThing" prefWidth="60"/>
         </VBox>
+
+        <!-- Text centered at the bottom -->
+        <VBox alignment="BOTTOM_CENTER" StackPane.alignment="BOTTOM_CENTER">
+                <Text fx:id="caption"
+                  style="-fx-font-size: 15px; -fx-fill: black; -fx-stroke: black; -fx-stroke-width: 1;"
+                  translateY="-120"
+                  />
+            <Text fx:id="textBox"
+                  style="-fx-font-size: 15px; -fx-fill: black; -fx-stroke: black; -fx-stroke-width: 1;"
+                  translateY="-80"
+                  />
+        </VBox>
+
     </StackPane>
 
+    <!-- Styled Slider -->
     <Slider fx:id="stageSlider"
             min="0" max="100" value="0"
             majorTickUnit="1" blockIncrement="1"
             snapToTicks="true"
-            showTickLabels="false" showTickMarks="false"/>
+            showTickLabels="false" showTickMarks="false"
+            style="
+                -fx-control-inner-background: linear-gradient(to right, #6a7ba2, #a3b6d4);
+                -fx-background-color: #6a7ba2;
+                -fx-tick-label-fill: #2b3a4a;
+            "/>
 </VBox>
