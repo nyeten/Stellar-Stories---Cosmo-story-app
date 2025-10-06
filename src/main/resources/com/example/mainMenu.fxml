@@ -12,13 +12,13 @@
     <!-- Top Row -->
     <HBox spacing="40" alignment="CENTER">
         <Button text="Solar Flares" onAction="#switchToTut1" prefWidth="150"/>
-        <Button text="Tutorial 2" onAction="#switchToTut2" prefWidth="150"/>
+        <Button text="CME" onAction="#switchToCME" prefWidth="150"/>
     </HBox>
 
     <!-- Bottom Row -->
     <HBox spacing="40" alignment="CENTER">
         <Button text="Impact on Earth" onAction="#switchToEarthImpacts" prefWidth="150"/>
-        <Button text="Tutorial 4" onAction="#switchToTut4" prefWidth="150"/>
+        <Button text="Space Weather" onAction="#switchToSpaceWeather" prefWidth="150"/>
     </HBox>
 
 </VBox>

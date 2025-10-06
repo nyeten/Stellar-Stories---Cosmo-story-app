@@ -58,7 +58,7 @@ public class SolarFlare {
         ));
 
         textBox.setText(slide1Text);
-        caption.setText("Move slider at bottom to see solar flare progression");
+        caption.setText("Move slider at bottom to see solar flare progressiong");
 
 
         //add listener to slider to detect changes in value
