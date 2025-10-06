@@ -16,7 +16,7 @@
 <StackPane fx:id="root" prefWidth="640" prefHeight="480">
 
     <!-- Background slides -->
-    <ImageView fx:id="slides" fitWidth="480" fitHeight="360" preserveRatio="true"/>
+    <ImageView fx:id="slides" fitWidth="320" fitHeight="240" preserveRatio="true" translateY="-60" />
 
     <!-- Foreground image -->
     <ImageView fx:id="foreground" fitWidth="640" fitHeight="480" preserveRatio="true" />
@@ -34,11 +34,11 @@
               spacing="1"
               StackPane.alignment="BOTTOM_CENTER" >
                 <Text fx:id="caption"
-                text="Space Weather's Impact on Earth"
-                style="-fx-font-size: 20px; -fx-fill: black; -fx-stroke: black; -fx-stroke-width: 1;" />
+                text="CME"
+                style="-fx-font-size: 20px; -fx-fill: black; -fx-stroke: black; -fx-stroke-width: 1;" translateY="-60" />
 
                 <Text fx:id="textBox"
-                style="-fx-font-size: 12px; -fx-fill: black;" />
+                style="-fx-font-size: 12px; -fx-fill: black;" translateY="-60" />
 
                 <HBox spacing="10" alignment="BOTTOM_LEFT">
                     <Button fx:id="prevSlide" text="Previous" onAction="#prev" prefWidth="100"/>

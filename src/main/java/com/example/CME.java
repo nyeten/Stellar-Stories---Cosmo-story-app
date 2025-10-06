@@ -45,8 +45,8 @@ public class CME {
     String slide5Text = "After opposite fields interact, plasma buildup is sent flying into space";
     String slide6Text = "Though the direction is not always towards Earth and may entirely miss";
     String slide7Text = "If it does make contact with the Earth it usually takes 1-4 days to arrive";
-    String slide8Text = "With the Earth's magnetic fields helping to shield from this masss";
-    String slide9Text = "The effects of the matter that makes it include:   \n  Power grid's can have hardware overload \n  Communication disruptions   \n  Satelite devices damage";
+    String slide8Text = "With the Earth's magnetic fields helping to shield from this mass";
+    String slide9Text = "The effects of the matter that makes it include:\nPower grid's can have hardware overload     Communication disruptions.    Satelite devices damage";
 
     // Track the current slide index
     int currentSlide = 0;
