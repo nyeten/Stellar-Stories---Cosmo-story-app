@@ -12,7 +12,7 @@
     <!-- Top Row -->
     <HBox spacing="40" alignment="CENTER">
         <Button text="Solar Flares" onAction="#switchToTut1" prefWidth="150"/>
-        <Button text="Tutorial 2" onAction="#switchToTut2" prefWidth="150"/>
+        <Button text="CME" onAction="#switchToCME" prefWidth="150"/>
     </HBox>
 
     <!-- Bottom Row -->
