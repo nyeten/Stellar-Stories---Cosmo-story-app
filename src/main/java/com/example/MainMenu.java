@@ -42,12 +42,12 @@ public class MainMenu {
     }
 
     @FXML
-    private void switchToTut4() throws IOException {
-        // FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/app/tut4.fxml"));
-        // Tut4 controller = new Tut1(stage);
-        // loader.setController(controller);
-        // Scene scene = new Scene(loader.load());
-        // stage.setScene(scene);
+    private void switchToSpaceWeather() throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/spaceWeather.fxml"));
+        SpaceWeather controller = new SpaceWeather(stage);
+        loader.setController(controller);
+        Scene scene = new Scene(loader.load());
+        stage.setScene(scene);
     }
 
 }

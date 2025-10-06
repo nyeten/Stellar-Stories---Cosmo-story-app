@@ -16,7 +16,7 @@ import java.io.IOException;
 
 
 
-public class CME {  
+public class SpaceWeather {  
     // Reference to the main application stage
     Stage stage;
     
@@ -38,27 +38,20 @@ public class CME {
     boolean goNext = false;
 
     //String for each slide with description of current process
-    String slide1Text = "CME stands for \"Coronal Mass Ejection\"";
-    String slide2Text = "And it is the ejction of plasma and highly energized matter";
-    String slide3Text = "This type of space weather stems from the Sun's \"Coronal\" layer of atmospher";
-    String slide4Text = "And is common during periods of complex magnetic fields on the Sun";
-    String slide5Text = "After opposite fields interact, plasma buildup is sent flying into space";
-    String slide6Text = "Though the direction is not always towards Earth and may entirely miss";
-    String slide7Text = "If it does make contact with the Earth it usually takes 1-4 days to arrive";
-    String slide8Text = "With the Earth's magnetic fields helping to shield from this masss";
-    String slide9Text = "The effects of the matter that makes it include:   \n  Power grid's can have hardware overload \n  Communication disruptions   \n  Satelite devices damage";
+    String slide1Text = "Space Weather is a term used to describe space's changing conditions due to our Sun\nWith a few types of such weather being:";
+    String slide2Text = "\"CMEs\" or \"Coronal Mass Ejections\"";
+    String slide3Text = "\"Solar Flares\"";
+    String slide4Text = "\nSolar Winds\"";
 
     // Track the current slide index
     int currentSlide = 0;
 
     // Array of slide image URLs (placeholders for now)
-    String[] slideUrls = {"/images/space.png", "/images/CME/sun.png", "/images/CME/sunClose.png", 
-        "/images/CME/cme.png", "/images/CME/release.png", "/images/CME/flow1.png", 
-        "/images/CME/flow2.png", "/images/CME/arrival.png", "/images/CME/effects.png"};
-    String[] slideTexts = {slide1Text, slide2Text, slide3Text, slide4Text, slide5Text, slide6Text, slide7Text, slide8Text, slide9Text};
+    String[] slideUrls = {"/images/space.png", "/images/SpaceWeather/cme.png", "/images/SpaceWeather/flare.png", "/images/SpaceWeather/wind.png"};
+    String[] slideTexts = {slide1Text, slide2Text, slide3Text, slide4Text};
 
     // //its empty, I'll ad more eventually
-    public CME(Stage stage) {
+    public SpaceWeather(Stage stage) {
         this.stage = stage;
     }
 

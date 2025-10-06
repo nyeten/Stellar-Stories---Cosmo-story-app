@@ -16,7 +16,7 @@
 <StackPane fx:id="root" prefWidth="640" prefHeight="480">
 
     <!-- Background slides -->
-    <ImageView fx:id="slides" fitWidth="200" fitHeight="200" preserveRatio="true"/>
+    <ImageView fx:id="slides" fitWidth="480" fitHeight="360" preserveRatio="true"/>
 
     <!-- Foreground image -->
     <ImageView fx:id="foreground" fitWidth="640" fitHeight="480" preserveRatio="true" />
