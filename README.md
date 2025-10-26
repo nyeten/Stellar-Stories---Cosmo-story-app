@@ -2,6 +2,7 @@
 
 A JavaFX educational application created for the **NASA Space Apps Challenge (2025)**.  
 Developed collaboratively over two days, this app visually explains **solar flares**, **coronal mass ejections (CMEs)**, and **space weather impacts on Earth** through interactive slideshows and simple animations.
+Challenge link: https://www.spaceappschallenge.org/2025/challenges/stellar-stories-space-weather-through-the-eyes-of-earthlings/
 
 ---
 
@@ -18,7 +19,7 @@ Users can navigate from a **main menu** to four themed modules, each designed as
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Main Menu Navigation** – Clean JavaFX UI with buttons linking to each educational module.  
 - **Interactive Slideshows** – Each topic uses multiple slides, combining NASA visuals, text, and transitions.  
